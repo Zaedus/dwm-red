@@ -8,7 +8,7 @@
 /* See LICENSE file for copyright and license details. */
 /* appearance */
 static const unsigned int borderpx = 2;   /* border pixel of windows */
-static const unsigned int snap     = 32;  /* snap pixel */
+static const unsigned int snap     = 64;  /* snap pixel */
 static const unsigned int gappx    = 6;   /* pixel gap between clients */
 static const int showbar           = 1;   /* 0 means no bar */
 static const int topbar            = 1;   /* 0 means bottom bar */
@@ -66,13 +66,16 @@ static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
 
 #include "layouts.c"
+#include "fibonacci.c"
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "Tile",      tile },    /* first entry is default */
-	{ "Float",      NULL },    /* no layout function means floating behavior */
-	{ "Monocle",      monocle },
-	{ "Grid",      grid },
-	{ NULL,       NULL },
+	{ "Tile",      tile     },    /* first entry is default */
+	{ "Float",     NULL     },    /* no layout function means floating behavior */
+	{ "Monocle",   monocle  },
+	{ "Grid",      grid     },
+    { "Spiral",    spiral   },
+    { "Dwindle",   dwindle  },
+	{ NULL,        NULL     },
 };
 
 /* key definitions */
@@ -99,8 +102,6 @@ static const char *termcmd[]     = { "st", NULL };
 /* An alternative way to launch st along with the fish shell */
 /* static const char *termcmd[]     = { "st", "-e fish", NULL }; */
 static const char *tabtermcmd[]  = { "tabbed", "-r", "2", "st", "-w", "''", NULL };
-
-
  
 /* backlight */
 static const char *brightnessup[] = { "lux", "-a" "5%", NULL };
@@ -135,6 +136,10 @@ static Key keys[] = {
 	{ MODKEY,               -1,        XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,               -1,        XK_m,      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY,               -1,        XK_g,      setlayout,      {.v = &layouts[3]} },
+    { MODKEY,               -1,        XK_s,      setlayout,      {.v = &layouts[4]} },
+	{ MODKEY,               -1,        XK_d,      setlayout,      {.v = &layouts[5]} },
+
+
 
 	{ MODKEY,               -1,        XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,     -1,        XK_0,      tag,            {.ui = ~0 } },
@@ -156,7 +161,7 @@ static Key keys[] = {
 	{ 0,                    -1, XF86XK_AudioLowerVolume,   spawn, CMD("amixer sset Master 5%- && kill -49 $(pidof dwmblocks)") },
   { 0,                    -1, XF86XK_AudioMute,          spawn, CMD("amixer -D pulse set Master 1+ toggle && kill -49 $(pidof dwmblocks)")},
   { 0,                    -1, XF86XK_AudioRaiseVolume,   spawn, CMD("amixer sset Master 5%+ && kill -49 $(pidof dwmblocks)") },
-	{ 0,                    -1, XF86XK_AudioMicMute,       spawn, CMD("amixer set Capture toggle | gawk 'match($0, /Front Left.*\[(.*)\]/, a) {print a[1]}' | xargs notify-send --hint=int:transient:1 -i \"audio-input-microphone\" \"Mic switched: $1\"") },
+	{ 0,                    -1, XF86XK_AudioMicMute,       spawn, CMD("amixer set Capture toggle | gawk 'match($0, /Front Left.*\\[(.*)\\]/, a) {print a[1]}' | xargs notify-send --hint=int:transient:1 -i \"audio-input-microphone\" \"Mic switched: $1\"") },
   { 0,                    -1, XF86XK_MonBrightnessUp,    spawn, {.v = brightnessup} },
   { 0,                    -1, XF86XK_MonBrightnessDown,  spawn, {.v = brightnessdown} },
   { MODKEY,               -1, XF86XK_AudioRaiseVolume,   spawn, CMD("playerctl next")},
