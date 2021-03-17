@@ -1,5 +1,7 @@
 # My dwm config
 
+![Preview of my DWM config](https://raw.githubusercontent.com/Zaedus/dwm/master/dwm.png)
+
 **This is a modification of [DistroTube's dwm config](https://gitlab.com/dwt1/dwm-distrotube).**
 
 Since DistroTube introduced me to dwm through his gitlab and his videos, I thought using his config would be a good starting point for learning and using dwm. A lot of the info on this README is just copied from his README because I didn't change a whole lot.
@@ -80,3 +82,8 @@ The MODKEY is set to the Super/Windows key. Anything in parentheses is the defau
 | `MODKEY + DOWN`         | shrinks the size of the secondary windows |
 | `MODKEY + .`            | switches focus next monitors |
 | `MODKEY + ,`            | switches focus to prev monitors |
+
+# Other DWM Related Configs
+
+* dwmblocks (not done yet)
+* st (not done yet)
