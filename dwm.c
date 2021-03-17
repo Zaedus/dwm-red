@@ -1546,8 +1546,8 @@ run(void)
 
 void
 runAutostart(void) {
-	//system("/home/zaedus/.dwm/autostart_blocking.sh");
-	system("/home/zaedus/.dwm/autostart.sh &");
+	//system("~/.dwm/autostart_blocking.sh");
+	system("~/.dwm/autostart.sh &");
 }
 
 void
