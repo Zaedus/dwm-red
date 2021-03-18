@@ -96,3 +96,4 @@ AND now for a limited time of 10^23 years, you can get the
 
 - EPIC Firefox theme
   ![Insert cool image of Firefox theme here](https://raw.githubusercontent.com/Zaedus/dwm/master/firefox-theme.png)
+- Thats it I guess (◔_◔)
