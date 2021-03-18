@@ -88,3 +88,6 @@ The MODKEY is set to the Super/Windows key. Anything in parentheses is the defau
 - [dwmblocks](https://github.com/Zaedus/dwmblocks/)
 - [st](https://github.com/Zaedus/st)
 
+OR if you're feeling extra ₘᵢₙᵢₘₐₗ
+
+- [dwmblocks-minimal](https://github.com/Zaedus/dwmblocks-minimal)
