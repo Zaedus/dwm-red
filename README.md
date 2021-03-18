@@ -65,25 +65,26 @@ These scripts were from [DistroTube's Repo](https://gitlab.com/dwt1/dmscripts). 
 
 The MODKEY is set to the Super/Windows key. Anything in parentheses is the default I've set it to, but it is always changeable.
 
-| Keybinding              | Action |
-| :-------------------    | :----- |
-| `MODKEY + RETURN`       | opens selected terminal (`st`) |
-| `MODKEY + SPACE`        | opens selected run launcher (`dmenu`) |
-| `MODKEY + q`            | closes window with focus |
-| `MODKEY + SHIFT + r`    | restarts dwm |
-| `MODKEY + SHIFT + q`    | quits dwm |
-| `MODKEY + 1-9`          | switch focus to workspaces 1-9 |
-| `MODKEY + SHIFT + 1-9`  | send focused window to workspaces 1-9 |
-| `MODKEY + Left`         | select the next window in the stack |
-| `MODKEY + Right`        | select the previous window in the stack |
-| `MODKEY + SHIFT + Left` | rotate the windows forward in the stack |
-| `MODKEY + SHIFT + Right`| rotate the windows backward in the stack |
-| `MODKEY + UP`           | expand the size of the secondary windows |
-| `MODKEY + DOWN`         | shrinks the size of the secondary windows |
-| `MODKEY + .`            | switches focus next monitors |
-| `MODKEY + ,`            | switches focus to prev monitors |
+| Keybinding               | Action                                    |
+| :----------------------- | :---------------------------------------- |
+| `MODKEY + RETURN`        | opens selected terminal (`st`)            |
+| `MODKEY + SPACE`         | opens selected run launcher (`dmenu`)     |
+| `MODKEY + q`             | closes window with focus                  |
+| `MODKEY + SHIFT + r`     | restarts dwm                              |
+| `MODKEY + SHIFT + q`     | quits dwm                                 |
+| `MODKEY + 1-9`           | switch focus to workspaces 1-9            |
+| `MODKEY + SHIFT + 1-9`   | send focused window to workspaces 1-9     |
+| `MODKEY + Left`          | select the next window in the stack       |
+| `MODKEY + Right`         | select the previous window in the stack   |
+| `MODKEY + SHIFT + Left`  | rotate the windows forward in the stack   |
+| `MODKEY + SHIFT + Right` | rotate the windows backward in the stack  |
+| `MODKEY + UP`            | expand the size of the secondary windows  |
+| `MODKEY + DOWN`          | shrinks the size of the secondary windows |
+| `MODKEY + .`             | switches focus next monitors              |
+| `MODKEY + ,`             | switches focus to prev monitors           |
 
 # Other DWM Related Configs
 
-* dwmblocks (not done yet)
-* st (not done yet)
+- [dwmblocks](https://github.com/Zaedus/dwmblocks/)
+- [st](https://github.com/Zaedus/st)
+
