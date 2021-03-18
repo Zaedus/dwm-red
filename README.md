@@ -83,7 +83,7 @@ The MODKEY is set to the Super/Windows key. Anything in parentheses is the defau
 | `MODKEY + .`             | switches focus next monitors              |
 | `MODKEY + ,`             | switches focus to prev monitors           |
 
-# Other DWM Related Configs
+# Other Cool Stuff
 
 - [dwmblocks](https://github.com/Zaedus/dwmblocks/)
 - [st](https://github.com/Zaedus/st)
@@ -91,3 +91,8 @@ The MODKEY is set to the Super/Windows key. Anything in parentheses is the defau
 OR if you're feeling extra ₘᵢₙᵢₘₐₗ
 
 - [dwmblocks-minimal](https://github.com/Zaedus/dwmblocks-minimal)
+
+AND now for a limited time of 10^23 years, you can get the
+
+- EPIC Firefox theme
+  ![Insert cool image of Firefox theme here](https://raw.githubusercontent.com/Zaedus/dwm/master/firefox-theme.png)
