@@ -48,8 +48,7 @@ static const unsigned int alphas[][3] = {
 
 /* tagging */
 /* static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" }; */
-static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
-
+static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
 static const Rule rules[] = {
 	/* xprop(1):
 	 *	WM_CLASS(STRING) = instance, class
@@ -177,6 +176,7 @@ static Key keys[] = {
 	{ MODKEY,               XK_p,      XK_r,      spawn,          CMD("/home/zaedus/.dmscripts/dmred") },
 	{ MODKEY,               XK_p,      XK_s,      spawn,          CMD("/home/zaedus/.dmscripts/dmsearch") },
 	{ MODKEY,               XK_p,      XK_p,      spawn,          CMD("passmenu") },
+	{ MODKEY,               XK_p,      XK_j,      spawn,          CMD("dmenu-emoji") },
 
 	TAGKEYS(                -1,        XK_1,                      0)
 	TAGKEYS(                -1,        XK_2,                      1)
