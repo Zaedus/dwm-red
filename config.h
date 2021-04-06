@@ -100,10 +100,7 @@ static const char *termcmd[]     = { "st", NULL };
 /* static const char *termcmd[]     = { "st", "-e fish", NULL }; */
 static const char *tabtermcmd[]  = { "tabbed", "-r", "2", "st", "-w", "''", NULL };
 
-/* volume keys*/
-static const char *upvol[] = { "amixer", "sset", "'Master'", "+5%", NULL };
-static const char *downvol[] = { "amixer", "sset", "Master", "-5%", NULL };
-static const char *mutevol[] = { "amixer",  "-D", "pulse", "set", "Master", "1+", "toggle", NULL };
+
  
 /* backlight */
 static const char *brightnessup[] = { "lux", "-a" "5%", NULL };
